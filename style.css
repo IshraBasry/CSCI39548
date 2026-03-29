@@ -7,6 +7,11 @@ header {
     padding: 10px 20px;
 }
 
+/* ✅ Added so nav behaves correctly on desktop */
+header nav {
+    display: flex;
+}
+
 header .logo {
     font-size: 1.5em;
     font-weight: bold;
@@ -235,14 +240,13 @@ footer p {
     margin: 5px 0;
 }
 
+/* ✅ MOBILE */
 @media (max-width: 768px) {
    
     header {
         flex-direction: column;
         align-items: flex-start;
     }
-
-    
 
     .hero h1 {
         font-size: 2rem;
@@ -285,6 +289,7 @@ footer p {
     }
 }
 
+/* hide hamburger on desktop */
 .hamburger {
     display: none;
 }
