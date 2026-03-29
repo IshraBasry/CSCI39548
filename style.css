@@ -22,7 +22,6 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-
 .hero {
     height: 400px; 
     background-image: url("images/hero.jpeg"); 
@@ -45,7 +44,6 @@ header nav a:hover {
     font-size: 1.3em;
     margin-top: 10px;
 }
-
 
 .menu-title {
     text-align: center;
@@ -95,7 +93,6 @@ header nav a:hover {
     margin-bottom: 10px;
 }
 
-
 .gallery-title {
     text-align: center;
     margin-top: 30px;
@@ -111,7 +108,7 @@ header nav a:hover {
 
 .slides {
     display: flex;
-    width: 600%; /* 6 images */
+    width: 600%;
     animation: slide 36s linear infinite; 
 }
 
@@ -120,7 +117,6 @@ header nav a:hover {
     height: 500px;      
     object-fit: cover;  
 }
-
 
 @keyframes slide {
     0%   { transform: translateX(0%); }
@@ -131,7 +127,6 @@ header nav a:hover {
     83.33% { transform: translateX(-83.33%); }
     100% { transform: translateX(-100%); }
 }
-
 
 .about {
     width: 80%;
@@ -151,7 +146,6 @@ header nav a:hover {
     line-height: 1.6;
     color: #333;
 }
-
 
 .contact-title {
     text-align: center;
@@ -208,7 +202,6 @@ header nav a:hover {
     background-color: #256161;
 }
 
-
 footer {
     background-color: #2F6F73;
     color: white;
@@ -242,7 +235,6 @@ footer p {
     margin: 5px 0;
 }
 
-/* MOBILE & TABLET RESPONSIVE DESIGN */
 @media (max-width: 768px) {
    
     header {
@@ -282,4 +274,3 @@ footer p {
         font-size: 0.9rem;
     }
 }
-
