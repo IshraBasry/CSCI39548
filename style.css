@@ -273,4 +273,27 @@ footer p {
     footer .footer-container {
         font-size: 0.9rem;
     }
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        ursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+}
+
+.hamburger {
+    display: none;
 }
