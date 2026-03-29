@@ -10,7 +10,8 @@
 
 <header>
   <div class="logo">ITHAA</div>
-  <nav>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="nav-links">
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="about.html">About</a>
@@ -23,61 +24,63 @@
 <div class="menu-cards">
 
   <div class="card">
-    <img src="images/tartare.jpeg" alt="Tuna Tartare">
+    <img src="images/tartare.jpeg">
     <h3>Tuna Tartare</h3>
     <p>Fresh tuna with citrus and herbs</p>
     <p class="price">$28</p>
+    <button onclick="addToCart('Tuna Tartare', 28)">Add to Cart</button>
   </div>
 
   <div class="card">
-    <img src="images/seared.jpeg" alt="Lobster Risotto">
+    <img src="images/seared.jpeg">
     <h3>Scallop Risotto</h3>
-    <p>Seared scallop and saffron risotto </p>
+    <p>Seared scallop and saffron risotto</p>
     <p class="price">$42</p>
+    <button onclick="addToCart('Scallop Risotto', 42)">Add to Cart</button>
   </div>
 
   <div class="card">
-    <img src="images/grill.jpeg" alt="Grilled Reef Fish">
+    <img src="images/grill.jpeg">
     <h3>Grilled Reef Fish</h3>
     <p>Local fish with tropical salsa</p>
     <p class="price">$36</p>
+    <button onclick="addToCart('Grilled Reef Fish', 36)">Add to Cart</button>
   </div>
 
   <div class="card">
-    <img src="images/platter.jpeg" alt="Seafood Platter">
+    <img src="images/platter.jpeg">
     <h3>Seafood Platter</h3>
     <p>Chef selection of fresh seafood</p>
     <p class="price">$55</p>
+    <button onclick="addToCart('Seafood Platter', 55)">Add to Cart</button>
   </div>
 
   <div class="card">
-    <img src="images/mango2.jpeg" alt="Mango Coconut Dessert">
+    <img src="images/mango2.jpeg">
     <h3>Mango Coconut Dessert</h3>
     <p>Tropical mango with coconut cream</p>
     <p class="price">$20</p>
+    <button onclick="addToCart('Mango Coconut Dessert', 20)">Add to Cart</button>
   </div>
 
   <div class="card">
-    <img src="images/honey.jpeg" alt="Grilled Shrimp">
-    <h3>Lavendar Honey Gelato</h3>
-    <p>Wildflower honey & culinary lavender infusion</p>
+    <img src="images/honey.jpeg">
+    <h3>Lavender Honey Gelato</h3>
+    <p>Wildflower honey & lavender</p>
     <p class="price">$22</p>
+    <button onclick="addToCart('Lavender Honey Gelato', 22)">Add to Cart</button>
   </div>
 
 </div>
 
+<h2 class="menu-title">Your Cart</h2>
+
+<div class="cart-container">
+  <div id="cart-items"></div>
+  <h3 id="cart-total">Total: $0</h3>
+  <button onclick="clearCart()">Clear Cart</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-<footer>
-  <div class="footer-container">
-    <div class="social">
-      <a href="https://www.instagram.com/ithaa.undersea.restaurant/?igsh=MW04NWVudDg0dnZiag==" target="_blank">Join Our Instagram</a>
-    </div>
-    <div class="hours">
-      <p><strong>Business Hours:</strong></p>
-      <p>Mon - Sun: 11:00 AM - 10:00 PM</p>
-    </div>
-    <p class="copyright">2026 ITHAA Restaurant</p>
-  </div>
-</footer>
